@@ -1,0 +1,42 @@
+{
+  "name": "js_nous_training",
+  "version": "0.0.1",
+  "description": "React, javascript training",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imyagnesh/js_Nous_training.git"
+  },
+  "keywords": [
+    "React",
+    "Javascript",
+    "ES6"
+  ],
+  "author": "Yagnesh Modh (yagnesh.modh@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imyagnesh/js_Nous_training/issues"
+  },
+  "homepage": "https://github.com/imyagnesh/js_Nous_training#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.49.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
