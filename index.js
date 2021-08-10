@@ -637,6 +637,247 @@ const arr = [1,2,3,4,5];
 //     console.log('a3');
 // }, 20)
 
+// const users = [
+//     {
+//         name: "Yagnesh",
+//         age: 30,
+//         gender: 'male'
+//     },
+//     {
+//         name: "Rohit",
+//         age: 26,
+//         gender: 'male'
+//     },
+//     {
+//         name: "virat",
+//         age: 24,
+//         gender: 'male'
+//     },
+//     {
+//         name: "dipila",
+//         age: 32,
+//         gender: 'female'
+//     },
+//     {
+//         name: "priyanka",
+//         age: 34,
+//         gender: 'female'
+//     },
+//     {
+//         name: "alia",
+//         age: 18,
+//         gender: 'female'
+//     },
+//     {
+//         name: 'Amitabh',
+//         age: 78,
+//         gender: 'male'
+//     }
+// ];
+
+// const groupByAge = users.reduce((p, c) => {
+//     const age =  Math.floor(c.age/10);
+//     const ageGroup = `${age}0-${age}9`;
+//     (p[ageGroup] = p[ageGroup] || []).push(c);
+//     return p;
+// }, {})
+
+// // sort inner array.
+
+// console.log(groupByAge);
+
+
+// {
+//     "00-09": [],
+    
+// }
+
+// const arr = [1,2,3,4,2,8,5,6,7];
+
+// const isFourExist = arr.some(x => {
+//     console.log(x);
+//     return x === 4;
+// });
+
+// O(LogN)
+
+// const set  = new Set(arr);
+// const weakSet = new WeakSet();
+
+// console.log(set.size);
+// console.log(set.has(4));
+
+// const userSet = new Set(users);
+
+// const weakMap = new WeakMap();
+
+
+// console.log(isFourExist);
+
+// const map = new Map();
+
+// map.set('yagnesh', {
+//     name: 'yagnesh',
+//     age: 30,
+//     gender: 'male'
+// });
+
+// console.log(map.get('yagnesh'));
+
+// Promises
+
+// const login = ()  => {
+//     return new Promise((resolve, reject) => {
+//         try {
+//             setTimeout(() => {
+//                 resolve('adfadsfasdfdsas')
+//             }, 1000)
+//         } catch (error) {
+//             reject('Login Fail')
+//         }
+//     })
+// }
+
+// const wether = () => {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             reject({
+//                 ahmedabad: '38 degree'
+//             })
+//         }, 2000)
+        
+//     })
+    
+// }
+
+//pending
+
+// resolve
+// reject
+
+// let loading = false;
+
+// const users = (token) => {
+//     loading = true;
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             if(token) {
+//                 resolve('users data')
+//             }else {
+//                 reject('Authentication Fail')
+//             }
+//         }, 500)
+//     })
+// }
+
+// const loadData = async () => {
+//     try {
+//         console.time('apicall')
+//         const res = await Promise.race([
+//             login(),
+//             wether()
+//         ]);
+//         console.log(res);
+//         // const loginRes = await login();
+//         // const wetherRes = await wether();
+//         // console.log(loginRes);
+//         // console.log(wetherRes);
+//         console.timeEnd('apicall')
+//     } catch (error) {
+//         console.log(error);
+//     }
+// }
+
+// loadData()
+
+// All
+// AllSettled
+// Any
+// Race
+
+
+// old javascript approch
+// login()
+// .then((value) => {
+//     console.log(value);
+//     users()
+//     .then((userData) => {
+//         console.log(userData);
+//     })
+//     .catch((error) => {
+//         console.log(error);
+//     })
+// })
+// .catch((error) => {
+//     console.log(error);
+// })
+// .finally(() => {
+//     loading = false;
+// })
+
+
+
+// function* xyz() {
+//     yield 1;
+//     yield 2;
+//     yield 3;
+//     yield 4;
+//     return 'completed'
+// }
+
+// const gen = xyz();
+
+// const set = new Set([1,2,3,4,5]);
+
+// const map = new Map();
+// map.set('a', {a: 1})
+// map.set('b', {b: 1})
+// map.set('c', {c: 1})
+
+// const obj = {
+//     a: 1,
+//     b: 2,
+//     c: 3
+// }
+
+// for (const key in obj) {
+//     console.log(key);
+//     console.log(obj[key]);
+// }
+
+// console.log(Object.keys(obj)); 
+
+
+// for (const [key, value] of map.entries()) {
+//     console.log(key);
+//     console.log(value);
+// }
+
+// for (const iterator of map.values()) {
+//     console.log(iterator);
+// }
+
+// for (const iterator of set.values()) {
+//     console.log(iterator);
+// }
+
+// for (const iterator of gen) {
+//     console.log(iterator);
+// }
+
+// console.log(gen.next());
+
+// console.log(gen.next());
+// console.log(gen.next());
+// console.log(gen.next());
+// console.log(gen.next());
+
+
+
+
+
+
+
 
 
 
