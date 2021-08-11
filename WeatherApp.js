@@ -1,5 +1,7 @@
 import React, { Component, createRef } from 'react';
 import './WeatherApp.css';
+import ErrorMsg from './Error';
+import LoadingMsg from './Loading';
 
 class WeatherApp extends Component {
   constructor(props) {
@@ -16,46 +18,67 @@ class WeatherApp extends Component {
     };
   }
 
-  getTemperature=()=>{
-    console.log("getTemperature");
-    fetch("https://jsonplaceholder.typicode.com/todos/1")
+  
+
+  getTemperature = () => {
+    console.log('getTemperature');
+    fetch('https://jsonplaceholder.typicode.com/todos/1')
       .then(res => res.json())
       .then(
-        (result) => {
-           console.log(result)
+        result => {
+          setTimeout(
+            () =>  console.log('timeout'), 
+            1000
+          );
+          console.log(result);
           this.setState({
-            isLoaded: true,
-           
+            isLoaded: false,
           });
         },
         // Note: it's important to handle errors here
         // instead of a catch() block so that we don't swallow
         // exceptions from actual bugs in components.
-        (error) => {
+        error => {
           this.setState({
-            isLoaded: true,
-            error
+            isLoaded: false,
+            error,
           });
-        }
-      )
-  }
-  
+        },
+      );
+  };
 
   render() {
-    return (
-      <>
-        <h1>Weather App</h1>
-        <label>Select City:</label>
-        <select>
-          {this.state.cityList.map(city => (
-            <option key={city.id} value={city.value}>
-              {city.cityName}
-            </option>
-          ))}
-        </select>
-        <button onClick={this.getTemperature}>Get Tempereture</button>
-      </>
-    );
+    const { error, isLoaded } = this.state;
+    if (error) {
+      return (
+        <>
+          <ErrorMsg />
+        </>
+      );
+    } else if (isLoaded) {
+      return (
+        <>
+          <LoadingMsg />
+        </>
+      );
+    } else {
+      return (
+        <>
+          <h1>Weather App</h1>
+          <div>
+            <label>Select City:</label>
+            <select>
+              {this.state.cityList.map(city => (
+                <option key={city.id} value={city.value}>
+                  {city.cityName}
+                </option>
+              ))}
+            </select>
+            <button onClick={this.getTemperature}>Get Tempereture</button>
+          </div>
+        </>
+      );
+    }
   }
 }
 
