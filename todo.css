@@ -1,0 +1,41 @@
+.todo-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-wrapper > h1 {
+    text-align: center;
+}
+
+.todo-wrapper > form {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.list-wrapper {
+    flex: 1;
+    overflow: auto;
+}
+
+.list-container {
+    display: flex;
+    margin: 1rem;
+    align-items: center;
+}
+
+.list-container > span {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.filter-wrapper {
+    display: flex;
+}
+
+.filter-wrapper > button {
+    flex: 1;
+}
+
+

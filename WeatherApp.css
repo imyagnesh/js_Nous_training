@@ -1,0 +1,25 @@
+.weather-error {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}
+
+  h1 {
+    text-align: center;
+}
+
+.weather {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+ 
+
+.weather > button {
+    
+    flex-wrap: wrap;
+     
+}
+
+
