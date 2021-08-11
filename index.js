@@ -1,9 +1,11 @@
 import React, { Component, createRef } from 'react';
 import ReactDOM from 'react-dom';
-import Todo from './Todo';
-import './index.css';
+import WeatherApp from './WeatherApp';
+//import './index.css';
+import './WeatherApp.css';
 
-ReactDOM.render(<Todo />, document.getElementById('root'));
+//ReactDOM.render(<Todo />, document.getElementById('root'));
+ReactDOM.render(<WeatherApp />, document.getElementById('root'));
 
 // Whenever i change state or props value that time only component rerender
 
