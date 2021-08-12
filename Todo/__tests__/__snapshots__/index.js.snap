@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test todo application should render data on component load 1`] = `
+<div
+  class="todo-wrapper"
+>
+  <h1>
+    Todo App
+  </h1>
+  <form>
+    <input
+      name="todo"
+      type="text"
+    />
+    <button
+      type="submit"
+    >
+      Add Todo
+    </button>
+  </form>
+  <div
+    class="list-wrapper"
+  >
+    <h2>
+      Loading....
+    </h2>
+  </div>
+  <div
+    class="filter-wrapper"
+    data-testid="filter-wrapper"
+  >
+    <button
+      type="button"
+    >
+      All
+    </button>
+    <button
+      type="button"
+    >
+      Pending
+    </button>
+    <button
+      type="button"
+    >
+      Completed
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Test todo application should take snapshot 1`] = `
+<div
+  class="todo-wrapper"
+>
+  <h1>
+    Todo App
+  </h1>
+  <form>
+    <input
+      name="todo"
+      type="text"
+    />
+    <button
+      type="submit"
+    >
+      Add Todo
+    </button>
+  </form>
+  <div
+    class="list-wrapper"
+  >
+    <h2>
+      Loading....
+    </h2>
+  </div>
+  <div
+    class="filter-wrapper"
+    data-testid="filter-wrapper"
+  >
+    <button
+      type="button"
+    >
+      All
+    </button>
+    <button
+      type="button"
+    >
+      Pending
+    </button>
+    <button
+      type="button"
+    >
+      Completed
+    </button>
+  </div>
+</div>
+`;
