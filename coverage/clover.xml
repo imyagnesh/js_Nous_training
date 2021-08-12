@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1628745351724" clover="3.2.0">
+  <project timestamp="1628745351724" name="All files">
+    <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4" elements="11" coveredelements="11" complexity="0" loc="7" ncloc="7" packages="1" files="1" classes="1"/>
+    <file name="todoFilter.js" path="/Users/yagneshmodh/Documents/projects/js_Nous_training/Todo/todoFilter.js">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="7" type="stmt"/>
+      <line num="6" count="7" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

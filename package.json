@@ -4,7 +4,7 @@
   "description": "React, javascript training",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "webpack",
     "start": "webpack serve"
   },
@@ -26,9 +26,13 @@
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/eslint-parser": "^7.15.0",
+    "@babel/plugin-transform-runtime": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
     "@babel/preset-react": "^7.14.5",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
     "babel-loader": "^8.2.2",
+    "babel-plugin-module-resolver": "^4.1.0",
     "css-loader": "^6.2.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
@@ -37,6 +41,7 @@
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "html-webpack-plugin": "^5.3.2",
+    "jest": "^27.0.6",
     "prettier": "2.3.2",
     "style-loader": "^3.2.1",
     "webpack": "^5.49.0",
@@ -44,6 +49,8 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "axios": "^0.21.1",
+    "babel-jest": "^27.0.6",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-addons-shallow-compare": "^15.6.3",

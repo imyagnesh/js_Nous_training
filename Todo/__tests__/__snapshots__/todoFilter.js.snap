@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Todo Filter Component should take snapshot 1`] = `
+<div
+  class="filter-wrapper"
+  data-testid="filter-wrapper"
+>
+  <button
+    type="button"
+  >
+    All
+  </button>
+  <button
+    type="button"
+  >
+    Pending
+  </button>
+  <button
+    type="button"
+  >
+    Completed
+  </button>
+</div>
+`;

@@ -1,34 +1,37 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: "./index.js",
+  entry: './index.js',
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "main.js",
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'main.js',
   },
-  mode: "development",
+  mode: 'development',
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
         },
       },
       {
-          test: /\.css$/,
-          exclude: /node_modules/,
-          use: ["style-loader","css-loader"]
-      }
+        test: /\.css$/,
+        exclude: /node_modules/,
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./public/index.html",
-      filename: "index.html",
-      inject:'body',
+      template: './public/index.html',
+      filename: 'index.html',
+      inject: 'body',
     }),
   ],
+  devServer: {
+    open: true,
+  },
 };

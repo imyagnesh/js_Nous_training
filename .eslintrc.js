@@ -5,10 +5,7 @@ module.exports = {
     node: true,
   },
   parser: '@babel/eslint-parser',
-  extends: [
-    'plugin:react/recommended',
-    'airbnb',
-  ],
+  extends: ['plugin:react/recommended', 'airbnb'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -16,11 +13,10 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-  ],
+  plugins: ['react'],
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'jsx-closing-bracket-location': [1, {selfClosing: 'after-props'}]
     'react/state-in-constructor': 0,
     'arrow-parens': 0,
   },
